@@ -1,0 +1,9 @@
+1. To run a Node.js file, you can use the following command in your terminal:
+
+     node filename.js
+
+2. Replace filename with the name of your Node.js file.
+
+     To run an EJS file, you can use the ejs module in Node.js. First, you need to install the ejs module using npm:
+
+      npm install ejs
