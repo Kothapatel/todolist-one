@@ -1,0 +1,33 @@
+<%- include("header") -%>
+
+    <body>
+
+        <div class="box" id="heading">
+            <h1>
+                <%= kindofDay %>
+            </h1>
+        </div>
+
+        <div class="box" id="items">
+
+            <% for (var i=0; i < Newlists.length; i++){ %>
+
+                <div class="item">
+                    <input type="checkbox">
+                    <p>
+                        <%= Newlists[i] %>
+                    </p>
+                </div>
+                <% } %>
+
+                    <form action="/" method="post" class="items">
+
+                        <input type="text" name="ipOne" placeholder="Enter To-do" autocomplete="off">
+
+                        <button type="submit">+</button>
+                        <button type="submit" name="remove" id="remove">×</button>
+
+                    </form>
+        </div>
+
+        <%- include("footer") -%>
